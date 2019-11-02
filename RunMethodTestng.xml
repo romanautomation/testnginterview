@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+
+
+
+
+
+
+
+  <test name="Test">
+  
+    <classes>
+    
+      <class name="FirstSet.CommandPrompt">
+       <methods>
+        <exclude name="RunFromCommandPrompt"></exclude>
+       </methods>
+       </class>
+       
+      <class name="FirstSet.TestAnnotations">
+       <methods>
+        <exclude name="firstTest"></exclude>
+       </methods>
+        </class>
+        
+      <class name="FirstSet.TestBelongToSingleGroup">
+      <methods>
+       <include name="testTwo"></include>
+      </methods>
+       </class>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  
+  
+</suite> <!-- Suite -->
